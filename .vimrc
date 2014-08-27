@@ -9,3 +9,21 @@ set smartindent "들여쓰기를 좀더 영리하게 수행합니다. 코딩시 
 set guifont=Monaco:h13
 
 colorscheme idleFingers
+
+set nocompatible
+filetype off
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'The-NERD-tree'
+Plugin 'Tagbar'
+call vundle#end()
+filetype plugin indent on    " required
+"
+" Brief help
+" :PluginList          - list configured plugins
+" :PluginInstall(!)    - install (update) plugins
+" :PluginSearch(!) foo - search (or refresh cache first) for foo
+" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
+" see :h vundle for more details or wiki for FAQ
